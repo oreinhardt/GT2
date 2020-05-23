@@ -681,6 +681,8 @@ Error message and password prompt
 
 <li>Documentos Internos</li>
 
+<li>Draft of 'Roteiro processos pré-sentença'</li>
+
 <li>email</li>
 
 <li>Embargos de Declaração</li>
@@ -14181,7 +14183,7 @@ A dramatic quote Citação
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200522160320428" list="[[Roteiro processos pré-sentença]]" modified="20200522224541580" title="$:/StoryList">
+<div created="20200522160320428" list="[[Draft of 'Roteiro processos pré-sentença']]" modified="20200522224541580" title="$:/StoryList">
 <pre></pre>
 </div>
 <div list="$:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/Tools $:/core/ui/SideBar/More" title="$:/tags/SideBar">
@@ -16275,6 +16277,132 @@ Documento depositado em Secretaria Id XXXXXX
 </div>
 <div created="20200511232148823" modified="20200514030034604" tags="Escaninho" title="Documentos Internos">
 <pre></pre>
+</div>
+<div created="20200520185506375" draft.of="Roteiro processos pré-sentença" draft.title="Roteiro processos pré-sentença" modified="20200523001623038" tags="Conhecimento" title="Draft of 'Roteiro processos pré-sentença'">
+<pre>!! ''O que é processo pré-sentença?''
+
+O ''processo pré-sentença'' é todo aquele processo de conhecimento em que, não havendo mais prova a produzir, é ''`encerrada a instrução pelo magistrado, oportunizado razões finais, renovada a proposta de conciliação e esta é rejeitada.`'' (CLT: art. 850)
+
+O ''objetivo'' do [[fluxo de trabalho]] na fase de conhecimento é ''concluir'' esse tipo de processo para a ''prolação da sentença''. Em ''termos de gestão de processo'', para se chegar a isso é preciso realizar determinadas ''`atividadades`'' para impulsionar o processo:
+
+!!''Processos Ordinário e Sumaríssimo COM perícia''
+
+Ajuizamento ''&gt;'' ''`Triagem inicial`'' ''&gt;''  ''`Designação de audiência`'' ''&gt;''  ''`Citação`'' ''&gt;'' Exceção ''&gt;''  Defesa ''&gt;''  ''`Audiência inicial ( designação de prazos, perícias e diligências`'' ''&gt; ''Laudo pericial ''&gt;''  Manifestação sobre defesa e documentos e laudo pericial (réplica) ''&gt;''  Manifestação sobre diferenças e laudo pericial (tréplica) ''&gt;'' ''`Audiência de instrução`''  ''&gt;'' Razões Finais (geralmente em audiência) ''&gt;'' ''`Conclusão`'' para prolação da sentença.
+
+!!''Processos Sumaríssimo SEM perícia''
+
+Ajuizamento ''&gt;'' ''`Triagem inicial`'' ''&gt;''  ''`Designação de audiência`'' ''&gt;''  ''`Citação`'' ''&gt;'' Exceção ''&gt;''  Defesa ''&gt;''  ''`Audiência UNA`''  ''&gt;'' Manifestação sobre defesa e documentos, prova oral e razões finais sempre ''em audiência'' ''&gt;'' ''`Conclusão`'' para prolação da sentença.
+
+''Porém'', em razão da suspensão das audiências presenciais e perícias e possibilidade da supressão das audiências iniciais presencial, a ordem das etapas ''mudou'' para:
+
+!! ''Todos os processos, mesmo os com perícia''
+
+Ajuizamento ''&gt;'' ''`Triagem inicial`'' ''&gt;''  ''`Despacho de citação`'' ''&gt;''  ''`Citação por Oficial ou por advogado habilitado`'' ''&gt;'' Exceção ''&gt;''  Defesa ''&gt;''  ''`Intimação reclamante`''&gt;  Manifestação sobre defesa e documentos e ''provas'' (perícia e arrolamento de testemunhas) ''&gt;'' ''`Intimação reclamada`'' ''&gt;'' Manifestação sobre diferenças e ''provas'' (perícia e arrolamento de testemunhas) ''&gt;'' ''`Designação de perícia`'' &gt; Laudo pericial &gt; ''`Intimação das partes (prazo comum)`'' ''&gt;'' Manifestações sobre laudo ''&gt;'' ''`Designação de audiência de instrução e intimação`'' ''&gt;'' ''`Audiência de instrução`''  ''&gt;'' Razões Finais (geralmente em audiência) ''&gt;'' ''`Conclusão`'' para prolação da sentença.
+
+!!''Despachos de citação''
+
+Cada tipo de rito processual (Ordinário e Sumaríssimo) tem um tipo de despacho, mas ambos são muito parecidos, pois respeitam, nesse momento, praticamente as mesmas etapas acima descritas. Tanto é assim que os processos de Sumaríssimo com pedido de perícia são tratados como iniciais de Ordinário, recebendo o mesmo despacho:
+
+&lt;$details summary=&quot;Despacho citação INICIAL ORD e SUMA COM/perícia&quot;&gt;
+
+&lt;&lt;&lt;
+{{Despacho citação INICIAL ORD}}
+&lt;&lt;&lt; 
+&lt;/$details&gt;
+
+&lt;$details summary=&quot;Despacho citação UNA SUMA SEM/perícia&quot;&gt;
+
+&lt;&lt;&lt;
+{{Despacho citação UNA SUMA}}
+&lt;&lt;&lt; 
+&lt;/$details&gt;
+
+Utilizamos também um despacho nos processos que estavam pautados com audiência de instrução, que só pendiam de prova oral para concluir para sentença:
+
+&lt;$details summary=&quot;Despacho manutenção instrução&quot;&gt;
+
+&lt;&lt;&lt;
+{{Despacho manutenção instrução}}
+&lt;&lt;&lt; 
+&lt;/$details&gt;
+
+!!''Modelos de citação e intimação''
+
+''`Não há necessidade de intimar a parte reclamante quando for cumprir o despacho para citação`''. É necessário tão somente citar a reclamada. Para citação da reclamada, ''quando não há advogado habiltado'', deve ser utilizado modelo específico de ''citação por Oficial de Justiça'': 
+
+&lt;$details summary=&quot;Mandado de citação para RDA apresentar defesa&quot;&gt;
+
+&lt;&lt;&lt;
+{{402 - Mandado meio eletrônico com chaves de acesso - contestação}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+Para cada ''petição protocolada'', é preciso verificar a necessidade de ''`intimação`'', ''conforme o item do despacho a ser cumprido''.
+
+Apresentada ''contestação'' utilizar:
+
+&lt;$details summary=&quot;Intimação RTE ORD e SUMA COM/perícia sobre defesa&quot;&gt;
+
+&lt;&lt;&lt;
+{{Intimação RTE ORD e SUMA c/perícia sobre defesa}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+&lt;$details summary=&quot;Intimação RTE SUMA SEM/perícia sobre defesa&quot;&gt;
+
+&lt;&lt;&lt;
+{{Intimação RTE SUMA s/perícia sobre defesa}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+Apresentada ''manifestação sobre defesa e documentos e indicação de provas'' utilizar:
+
+&lt;$details summary=&quot;Intimação RDA ORD e SUMA COM/perícia sobre provas&quot;&gt;
+
+&lt;&lt;&lt;
+{{Intimação RDA ORD e SUMA COM/perícia sobre provas}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+&lt;$details summary=&quot;Intimação RDA SUMA SEM/perícia sobre provas&quot;&gt;
+
+&lt;&lt;&lt;
+{{Intimação RDA SUMA SEM/perícia sobre provas}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+Ainda, naqueles processos em que não há sequência de intimações, como aqueles que estavam pautados com audiência de instrução, por vezes, uma das partes apresenta ''proposta de conciliação''. Então intimamos a parte contrária para manifestação:
+
+&lt;$details summary=&quot;Intimação proposta de conciliação&quot;&gt;
+
+&lt;&lt;&lt;
+{{Intimação proposta de conciliação}}
+&lt;&lt;&lt;
+&lt;/$details&gt;
+
+!! ''Exauridas as manifestações determinadas nos despachos ''
+
+Cumpridas todas as etapas, restanto tão somente eventual ''`Designação de Perícia`'' e ''`Designação de Audiência de Instrução`'', deve-se levar em conta situações que fogem do trivial, como por exemplo, ''pedido oitiva de testemunha a ser ouvida por carta precatória (fora do TRT4)'', ''pedido de encerramento de uma das partes e pedido de oitiva do reclamante ou simples contraprova''. Quando há algo desse tipo que exige uma ação, seja um ''`despacho`'' ou ''`intimação`'', deve ser inserido lembrete.
+
+Aqui alguns exemplos reais de lembrentes utilizados:
+
+[[Lembretes pertinentes de preparo para a audiência]]
+
+Para fazer a preparação para ''`Designação de Audiência de Instrução`'' e ''`Designação de Perícia`'' siga os seguintes roteiros:
+
+[[Preparo do processo para designação de perícia]]
+
+[[Preparo do processo para designação de audiência]]
+
+!!''Não há provas a produzir''
+Acaso ambas as partes ''não tenham mais provas a produzir'', requerendo ''o encerramento da instrução'' e a ''impossibilidade de conciliação'' e ''não tenham requerido prazo para razões finais'', é necessário despachar declarando encerrada a instrução:
+
+&lt;$details summary=&quot;Despacho encerramento da instrução&quot;&gt;
+
+&lt;&lt;&lt;
+{{Despacho encerramento da instrução}}
+&lt;&lt;&lt;
+&lt;/$details&gt;</pre>
 </div>
 <div created="20200514182427358" modified="20200514182443813" tags="" title="email">
 <pre>Para acessar verifique o seu [[e-mail|https://mail.google.com/mail/u/1/#inbox]].</pre>
